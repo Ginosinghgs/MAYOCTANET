@@ -33,7 +33,7 @@
         }
 
         header {
-            background-image: url('file:///C:/Users/ggino/Downloads/rcb-vs-rr-ipl-2023-match-why-virat-kohlis-team-wears-green-jersey-every-year.webp');
+            background-image: url('https://img.etimg.com/thumb/width-1200,height-900,imgsize-244654,resizemode-75,msid-99712684/news/new-updates/rcb-vs-rr-ipl-2023-match-why-virat-kohlis-team-wears-green-jersey-every-year.jpg');
             height: 80vh;
             background-repeat: no-repeat;
             background-size: cover;
