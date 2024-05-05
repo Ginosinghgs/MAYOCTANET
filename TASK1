@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 15px;
+            margin: 0 5px;
+            border-radius: 5px;
+            background-color: #555;
+        }
+
+        nav a:hover {
+            background-color: #777;
+        }
+
+        header {
+            background-image: url('file:///C:/Users/ggino/Downloads/rcb-vs-rr-ipl-2023-match-why-virat-kohlis-team-wears-green-jersey-every-year.webp');
+            height: 80vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            text-align: center;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .logo img {
+            max-width: 50px;
+            height: auto;
+            margin-right: 10px;
+            text-align: start;
+        }
+
+        h1 {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 2em;
+            color: rgb(54, 11, 225);
+        }
+
+        .center_text {
+            text-align:center;
+        }
+
+        #bt1,
+        #bt2,
+        #registerButton {
+            border: 1px solid #333;
+            color: #333;
+            padding: 5px;
+            text-decoration: none;
+            margin: 5px;
+            cursor: pointer;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+
+        #bt1:hover,
+        #bt2:hover,
+        #registerButton:hover {
+            background-color: #333;
+            color: #fff;
+            transition: 0.3s ease;
+        }
+
+        #registrationForm {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            z-index: 999;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 8px;
+            box-sizing: border-box;
+        }
+        
+
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        #home1,#about1,#courses1,#contact1{
+            color: white;
+            background-color: lightgreen;
+            width: 600px;
+            height: 200px;
+            padding: 15px;
+            margin-bottom: 20px;
+            margin-top: 15px;
+            
+        }
+    </style>
+</head>
+<body>
+   
+
+    <header>
+        <div class="logo">
+            
+        </div>
+        <h1 style="margin:20px 0;"></h1>
+        <div class="center_text">
+           
+            <button id="registerButton" onclick="showRegistrationForm()">Book Tickets</button>
+        </div>
+    </header>
+
+    <div id="registrationForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="registrationNumber">phone number:</label>
+        <input type="text" id="registrationNumber" name="registrationNumber" required><br>
+
+        <label for="department">match date</label>
+        <input type="text" id="department" name="department" required><br>
+
+        <label for="programmingLanguage">Select Stand:</label>
+        <select id="programmingLanguage" name="programmingLanguage">
+            <option value="Java">Lower</option>
+            <option value="Python">upper</option>
+            <option value="C++">Vivo Box</option>
+        </select><br>
+
+        <button onclick="submitRegistration()">Submit</button>
+    </div>
+    
+    
+    <section id="about">
+        <center>
+        <div id="about1">
+        <h2>About Us</h2>
+        <p> This is the official page for booking online tickets for ipl matches.If you have any issue you can contact our mail id ipl2024@gmail.com.</p>
+    </center>
+    </div>
+    </section>
+
+   
+
+
+    <script>
+        function showRegistrationForm() {
+            document.getElementById('registrationForm').style.display = 'block';
+        }
+
+        function submitRegistration() {
+            // You can add your registration submission logic here
+            alert('Tickets Booked Successfully');
+        }
+    </script>
+</body>
+</html>
